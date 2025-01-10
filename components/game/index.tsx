@@ -10,7 +10,7 @@ import Actions from "@/components/game/Actions";
 
 export default function Game() {
   const newGame = useStore((s) => s.new);
-  useEffect(() => newGame(), []);
+  useEffect(() => newGame(), [newGame]);
 
   const gameStatus = useStore((s) => s.gameStatus);
   const errorMessage = useStore((s) => s.errorMessage);

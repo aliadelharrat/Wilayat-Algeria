@@ -1,4 +1,4 @@
-export default [
+export const wilayat = [
   { name: "أدرار", number: 1, status: false },
   { name: "الشلف", number: 2, status: false },
   { name: "الأغواط", number: 3, status: false },

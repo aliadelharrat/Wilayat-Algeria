@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import wilayat from "@/lib/wilayat";
+import { wilayat } from "@/lib/wilayat";
 import randomItem from "random-item";
 import arrayShuffle from "array-shuffle";
 const _ = require("lodash");
