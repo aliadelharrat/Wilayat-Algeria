@@ -42,6 +42,7 @@ export const useStore = create<State & Actions>((set, get) => ({
 
       // TODO: if all wilayat are mastered, do different thing!
       return {
+        errorMessage: null,
         wilayaNumber: randomWilaya?.number,
         options: getRandomOptions(randomWilaya!),
       };

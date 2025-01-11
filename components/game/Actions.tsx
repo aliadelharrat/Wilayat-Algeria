@@ -1,6 +1,7 @@
 import { useStore } from "@/store/game";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import Hint from "./Hint";
 
 export default function Actions() {
   const next = useStore((s) => s.new);
@@ -8,7 +9,7 @@ export default function Actions() {
     <>
       <Separator />
       <div className="flex items-center justify-between">
-        <Button variant={"secondary"}>تلميح</Button>
+        <Hint />
         <Button variant={"secondary"} onClick={next}>
           تخطي هذا الرقم
         </Button>

@@ -10,10 +10,10 @@ import Actions from "@/components/game/Actions";
 
 export default function Game() {
   const newGame = useStore((s) => s.new);
-  useEffect(() => newGame(), [newGame]);
-
   const gameStatus = useStore((s) => s.gameStatus);
   const errorMessage = useStore((s) => s.errorMessage);
+
+  useEffect(() => newGame(), [newGame]);
 
   if (gameStatus === "finished") {
     return (
